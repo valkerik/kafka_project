@@ -1,18 +1,56 @@
-# Getting Started
+# Справочник проекта Kafka
 
-### Reference Documentation
-For further reference, please consider the following sections:
+Добро пожаловать в справочник проекта Kafka! Здесь вы найдете информацию о проекте, его структуре, зависимостях и основных командах для работы с ним.
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.7.17/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.7.17/maven-plugin/reference/html/#build-image)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/2.7.17/reference/htmlsingle/index.html#web)
-* [Spring for Apache Kafka](https://docs.spring.io/spring-boot/docs/2.7.17/reference/htmlsingle/index.html#messaging.kafka)
+## _О проекте_
 
-### Guides
-The following guides illustrate how to use some features concretely:
+Проект Kafka представляет собой пример простого приложения, использующего Apache Kafka для обмена сообщениями между различными компонентами. Он включает в себя следующие компоненты:
 
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
+- `Producer`: Компонент, который генерирует и отправляет сообщения в Kafka-топик.
+- `Consumer`: Компонент, который подписывается на топик и обрабатывает полученные сообщения.
+- `KafkaServer`: Сервер Kafka, который обрабатывает и хранит сообщения.
+
+## Структура проекта
+
+Проект имеет следующую структуру:
+
+```
+kafka_project/
+  ├── config/
+  │   ├── ...
+  │   ├── ...
+  │   └── ...
+  ├── docker_compose/
+  │   └── docker-compose.yml
+  ├── pom.xml
+  └── kafka.log
+```
+
+- `KafkaProducerConfig`: Класс с кодом и настройками для компонента Producer.
+- `KafkaConsumerConfig`: Класс с кодом и настройками для компонента Consumer.
+- `docker-compose.yml`: Файл для развертывания Kafka-сервера и его зависимостей с использованием Docker Compose.
+
+## Зависимости
+
+Проект Kafka имеет следующие зависимости:
+
+- Java Development Kit (JDK) 17 или выше.
+- Docker и Docker Compose: Для развертывания Kafka-сервера в контейнере.
+
+## Установка и запуск
+
+1. Убедитесь, что у вас установлены JDK 17 или выше, Docker и Docker Compose.
+2. Клонируйте репозиторий проекта с помощью команды `git clone https://github.com/valkerik/kafka_project.git`.
+3. Запустите Kafka-сервер и его зависимости с помощью Docker Compose: `docker-compose up -d`.
+
+## Основные команды
+
+- `docker-compose up -d`: Запускает Kafka-сервер и его зависимости в фоновом режиме с использованием Docker Compose.
+- `docker-compose down`: Останавливает и удаляет контейнеры Kafka-сервера и его зависимостей.
+
+## Вклад и обратная связь
+
+Если у вас есть вопросы, проблемы или предложения по улучшению проекта, пожалуйста, создайте новый issue на странице проекта `https://github.com/valkerik/kafka_project/issues`.
+
+
 
