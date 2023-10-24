@@ -1,0 +1,321 @@
+2023-10-24 23:28:53,716 INFO  KafkaSpringBootApplication [StartupInfoLogger.java:55] Starting KafkaSpringBootApplication using Java 17.0.5 on VALKERIK with PID 21004 (C:\JAVA\kafka_springBoot\target\classes started by 1 in C:\JAVA\kafka_springBoot)
+2023-10-24 23:28:53,718 INFO  KafkaSpringBootApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-10-24 23:28:54,355 INFO  TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-10-24 23:28:54,360 INFO  Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-24 23:28:54,361 INFO  StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-10-24 23:28:54,362 INFO  StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-10-24 23:28:54,427 INFO  [/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-10-24 23:28:54,427 INFO  ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 667 ms
+2023-10-24 23:28:54,762 INFO  AdminClientConfig [AbstractConfig.java:376] AdminClientConfig values: 
+	bootstrap.servers = [localhost:29092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-10-24 23:28:54,796 INFO  AppInfoParser [AppInfoParser.java:119] Kafka version: 3.1.2
+2023-10-24 23:28:54,796 INFO  AppInfoParser [AppInfoParser.java:120] Kafka commitId: f8c67dc3ae0a3265
+2023-10-24 23:28:54,796 INFO  AppInfoParser [AppInfoParser.java:121] Kafka startTimeMs: 1698179334795
+2023-10-24 23:28:54,968 INFO  AppInfoParser [AppInfoParser.java:83] App info kafka.admin.client for adminclient-1 unregistered
+2023-10-24 23:28:54,975 INFO  Metrics [Metrics.java:659] Metrics scheduler closed
+2023-10-24 23:28:54,976 INFO  Metrics [Metrics.java:663] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-24 23:28:54,976 INFO  Metrics [Metrics.java:669] Metrics reporters closed
+2023-10-24 23:28:54,990 INFO  ConsumerConfig [AbstractConfig.java:376] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:29092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-groupId-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = groupId
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-10-24 23:28:55,012 INFO  AppInfoParser [AppInfoParser.java:119] Kafka version: 3.1.2
+2023-10-24 23:28:55,012 INFO  AppInfoParser [AppInfoParser.java:120] Kafka commitId: f8c67dc3ae0a3265
+2023-10-24 23:28:55,012 INFO  AppInfoParser [AppInfoParser.java:121] Kafka startTimeMs: 1698179335012
+2023-10-24 23:28:55,014 INFO  KafkaConsumer [KafkaConsumer.java:966] [Consumer clientId=consumer-groupId-1, groupId=groupId] Subscribed to topic(s): myKafkaTopic
+2023-10-24 23:28:55,022 INFO  Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-10-24 23:28:55,034 INFO  TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-24 23:28:55,039 INFO  Metadata [Metadata.java:402] [Consumer clientId=consumer-groupId-1, groupId=groupId] Resetting the last seen epoch of partition myKafkaTopic-0 to 0 since the associated topicId changed from null to KVsFp4MMQEuhoVrEKc4ySw
+2023-10-24 23:28:55,040 INFO  Metadata [Metadata.java:287] [Consumer clientId=consumer-groupId-1, groupId=groupId] Cluster ID: MddLqspVR4CaxTlMt-Kseg
+2023-10-24 23:28:55,041 INFO  ConsumerCoordinator [AbstractCoordinator.java:853] [Consumer clientId=consumer-groupId-1, groupId=groupId] Discovered group coordinator localhost:29092 (id: 2147483646 rack: null)
+2023-10-24 23:28:55,043 INFO  ConsumerCoordinator [AbstractCoordinator.java:535] [Consumer clientId=consumer-groupId-1, groupId=groupId] (Re-)joining group
+2023-10-24 23:28:55,044 INFO  KafkaSpringBootApplication [StartupInfoLogger.java:61] Started KafkaSpringBootApplication in 1.586 seconds (JVM running for 2.081)
+2023-10-24 23:28:55,050 INFO  ProducerConfig [AbstractConfig.java:376] ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:29092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2023-10-24 23:28:55,056 INFO  KafkaProducer [KafkaProducer.java:572] [Producer clientId=producer-1] Instantiated an idempotent producer.
+2023-10-24 23:28:55,058 INFO  ConsumerCoordinator [AbstractCoordinator.java:1000] [Consumer clientId=consumer-groupId-1, groupId=groupId] Request joining group due to: need to re-join with the given member-id
+2023-10-24 23:28:55,058 INFO  ConsumerCoordinator [AbstractCoordinator.java:535] [Consumer clientId=consumer-groupId-1, groupId=groupId] (Re-)joining group
+2023-10-24 23:28:55,067 INFO  AppInfoParser [AppInfoParser.java:119] Kafka version: 3.1.2
+2023-10-24 23:28:55,067 INFO  AppInfoParser [AppInfoParser.java:120] Kafka commitId: f8c67dc3ae0a3265
+2023-10-24 23:28:55,068 INFO  AppInfoParser [AppInfoParser.java:121] Kafka startTimeMs: 1698179335067
+2023-10-24 23:28:55,075 INFO  Metadata [Metadata.java:402] [Producer clientId=producer-1] Resetting the last seen epoch of partition myKafkaTopic-0 to 0 since the associated topicId changed from null to KVsFp4MMQEuhoVrEKc4ySw
+2023-10-24 23:28:55,075 INFO  Metadata [Metadata.java:287] [Producer clientId=producer-1] Cluster ID: MddLqspVR4CaxTlMt-Kseg
+2023-10-24 23:28:55,076 INFO  TransactionManager [TransactionManager.java:554] [Producer clientId=producer-1] ProducerId set to 8 with epoch 0
+2023-10-24 23:28:58,063 INFO  ConsumerCoordinator [AbstractCoordinator.java:595] [Consumer clientId=consumer-groupId-1, groupId=groupId] Successfully joined group with generation Generation{generationId=15, memberId='consumer-groupId-1-0e424402-d1b1-4fec-b2cd-79a58284d270', protocol='range'}
+2023-10-24 23:28:58,065 INFO  ConsumerCoordinator [ConsumerCoordinator.java:659] [Consumer clientId=consumer-groupId-1, groupId=groupId] Finished assignment for group at generation 15: {consumer-groupId-1-0e424402-d1b1-4fec-b2cd-79a58284d270=Assignment(partitions=[myKafkaTopic-0])}
+2023-10-24 23:28:58,073 INFO  ConsumerCoordinator [AbstractCoordinator.java:761] [Consumer clientId=consumer-groupId-1, groupId=groupId] Successfully synced group in generation Generation{generationId=15, memberId='consumer-groupId-1-0e424402-d1b1-4fec-b2cd-79a58284d270', protocol='range'}
+2023-10-24 23:28:58,073 INFO  ConsumerCoordinator [ConsumerCoordinator.java:280] [Consumer clientId=consumer-groupId-1, groupId=groupId] Notifying assignor about the new Assignment(partitions=[myKafkaTopic-0])
+2023-10-24 23:28:58,075 INFO  ConsumerCoordinator [ConsumerCoordinator.java:292] [Consumer clientId=consumer-groupId-1, groupId=groupId] Adding newly assigned partitions: myKafkaTopic-0
+2023-10-24 23:28:58,086 INFO  ConsumerCoordinator [ConsumerCoordinator.java:851] [Consumer clientId=consumer-groupId-1, groupId=groupId] Setting offset for partition myKafkaTopic-0 to the committed offset FetchPosition{offset=205, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:29092 (id: 1 rack: null)], epoch=0}}
+2023-10-24 23:28:58,087 INFO  KafkaMessageListenerContainer [LogAccessor.java:292] groupId: partitions assigned: [myKafkaTopic-0]
+2023-10-24 23:28:58,110 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 0_kafka 24-10-2023 23:28:58
+2023-10-24 23:28:58,110 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 1_kafka 24-10-2023 23:28:58
+2023-10-24 23:28:58,110 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 2_kafka 24-10-2023 23:28:58
+2023-10-24 23:28:58,118 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 3_kafka 24-10-2023 23:28:58
+2023-10-24 23:28:59,115 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 4_kafka 24-10-2023 23:28:59
+2023-10-24 23:29:00,126 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 5_kafka 24-10-2023 23:29:00
+2023-10-24 23:29:01,127 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 6_kafka 24-10-2023 23:29:01
+2023-10-24 23:29:02,131 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 7_kafka 24-10-2023 23:29:02
+2023-10-24 23:29:03,136 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 8_kafka 24-10-2023 23:29:03
+2023-10-24 23:29:04,144 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 9_kafka 24-10-2023 23:29:04
+2023-10-24 23:29:05,147 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 10_kafka 24-10-2023 23:29:05
+2023-10-24 23:29:06,159 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 11_kafka 24-10-2023 23:29:06
+2023-10-24 23:29:07,162 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 12_kafka 24-10-2023 23:29:07
+2023-10-24 23:29:08,167 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 13_kafka 24-10-2023 23:29:08
+2023-10-24 23:29:09,177 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 14_kafka 24-10-2023 23:29:09
+2023-10-24 23:29:10,181 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 15_kafka 24-10-2023 23:29:10
+2023-10-24 23:29:11,190 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 16_kafka 24-10-2023 23:29:11
+2023-10-24 23:29:12,191 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 17_kafka 24-10-2023 23:29:12
+2023-10-24 23:29:13,207 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 18_kafka 24-10-2023 23:29:13
+2023-10-24 23:29:14,210 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 19_kafka 24-10-2023 23:29:14
+2023-10-24 23:29:15,225 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 20_kafka 24-10-2023 23:29:15
+2023-10-24 23:29:16,225 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 21_kafka 24-10-2023 23:29:16
+2023-10-24 23:29:17,226 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 22_kafka 24-10-2023 23:29:17
+2023-10-24 23:29:18,228 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 23_kafka 24-10-2023 23:29:18
+2023-10-24 23:29:19,236 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 24_kafka 24-10-2023 23:29:19
+2023-10-24 23:29:20,239 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 25_kafka 24-10-2023 23:29:20
+2023-10-24 23:29:21,249 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 26_kafka 24-10-2023 23:29:21
+2023-10-24 23:29:22,254 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 27_kafka 24-10-2023 23:29:22
+2023-10-24 23:29:23,263 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 28_kafka 24-10-2023 23:29:23
+2023-10-24 23:29:24,268 INFO  KafkaListeners [KafkaListeners.java:17] Listeners слушает: hello 29_kafka 24-10-2023 23:29:24
